@@ -32,10 +32,6 @@ import java.util.StringJoiner;
 public class SentimentService {
 	private static final Logger log = LoggerFactory.getLogger(SentimentService.class);
 
-	public SentimentService(String classification){
-		super();
-	}
-
 	public Classifications predict(String input)
 			throws MalformedModelException, ModelNotFoundException, IOException,
 			TranslateException {
@@ -81,7 +77,7 @@ public class SentimentService {
 		this.log.info("Neg: {} = {}",classNegative.getClassName(),classNegative.getProbability());
 
 		StringJoiner outputString = new StringJoiner(", ",
-				"[ML Results", "]");
+				"", "");
 
 		outputString.add(rawText);
 

@@ -12,7 +12,7 @@
 	<groupId>dev.datainmotion.bertqa</groupId>
 	<artifactId>bertqa</artifactId>
 	<version>1.0.0</version>
-	<name>airquality</name>
+	<name>bertqa</name>
 	<description>spring-pulsar-bertqa: BERT QA DJL.AI Spring Boot with Spring Pulsar
 	</description>
 	<properties>
@@ -80,6 +80,11 @@
             <version>7.5</version>
             <scope>test</scope>
         </dependency>
+		<dependency>
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>0.15</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
